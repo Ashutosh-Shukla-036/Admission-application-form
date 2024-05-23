@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color:whitesmoke;
+            font-family: Arial, sans-serif;
+        }
+
+        .container{
+            width: 40%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 200px rgb(0,0,0,0.1);
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1{
+            text-align: center;
+            color: #333;
+        }
+
+        label{
+            padding: 8px;
+            margin-top: 10px;
+        }
+
+        label:after {
+            content:" *";
+            color: red;
+        }
+
+        input[type="text"],input[type="date"],input[type="email"],input[type="tel"],textarea {
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: medium;
+        }
+
+        button{
+            margin-top: 10px;
+            color: #fff;
+            background-color: #333;
+            padding: 8px;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Addmission Application</h1>
+    <div class="container">
+        <h1>Student Information Form</h1>
+        <form action="">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" required>
+
+            <label for="email">Eamil</label>
+            <input type="email" name="email" id="eamil" required>
+
+            <label for="tel">Phone number</label>
+            <input type="tel" name="tel" id="tel" required>
+
+            <label for="address">Address</label>
+            <textarea name="address" id="address" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
