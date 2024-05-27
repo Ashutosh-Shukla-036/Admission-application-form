@@ -64,6 +64,10 @@
             background-color:rgb(207, 247, 247);
         }
 
+        #photo{
+            margin-top: 5px;
+            padding: 4px;
+        }
     </style>
 </head>
 <body>
@@ -85,6 +89,9 @@
 
             <label for="address">Address</label>
             <textarea name="address" id="address" rows="4" required></textarea>
+
+            <label for="Photo">Photo</label>
+            <input type="file" name="photo" id="photo" accept="image/*" capture="user">
 
             <button type="submit">Submit</button>
         </form>
